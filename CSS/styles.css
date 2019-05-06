@@ -1,0 +1,334 @@
+body {
+    background-color: #2b2b2b;
+    color: white;
+    margin: 0px;
+    font-size: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #f27609;
+}
+
+/*Barra de navegação - Navigation Bar*/
+
+.navigation {
+    height: 50px;
+    font-size: 18px;
+
+    animation-name: navigation-animation;
+    animation-duration: 4s;
+}
+
+.navigation ul {
+    list-style: none;
+    margin-top: 0px;
+    text-align: right;
+    height: 50px;
+}
+
+.navigation li {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    line-height: 50px;
+    font-weight: 100;
+}
+
+.navigation li.navigation-mobile {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+/*Conteúdo da página - Page content*/
+
+.content div{
+    display: inline-block;
+    height: 650px;
+}
+
+.last-name {
+    color: #f27609;
+    display: block;
+}
+
+.profile-image {
+    width: 40%;
+    text-align: center;
+
+    animation-name: profile-image-animation;
+    animation-duration: 3s;
+}
+
+.profile-image img {
+    border-radius: 400px;
+    margin-top: 100px;
+}
+
+.profile-title {
+    vertical-align: top;
+    width: 60%;
+    margin-top: 200px;
+
+    animation-name: profile-title-animation;
+    animation-duration: 3s;
+}
+
+.profile-title h1 {
+    font-size: 58px;
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 54px;
+}
+
+.profile-title h2 {
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: -30px;
+}
+
+/* Página de currículo */
+
+.main {
+    padding: 80px 180px 80px 100px;
+
+    animation-name: main-animation;
+    animation-duration: 3s;
+}
+
+.cv-img {
+    float: left;
+    width: 300px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.main h1 {
+    color: white;
+    font-weight: normal;
+    font-size: 25px;
+}   
+
+.main h2 {
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-top: 40px;
+}
+
+.main h3 {
+    color: #f27609;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.main p {
+    color: white;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: justify;
+}
+
+/* Página de contato - Contact Page */
+
+.img-social img {
+    width: 48px;
+}
+
+/* Página de Portfolio - Portfolio Page */
+
+.portfolio-img {
+    width: 320px;
+    height: 320px;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.black-box {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    padding-top: 140px;
+    transition: 1s;
+}
+
+.black-box:hover {
+    opacity: 0.8;
+    transition: 1s;
+}
+
+.black-box-text {
+    text-align: center;
+}
+
+.black-box-text h1 {
+    font-size: 16px;
+    color: #f27609;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+
+.black-box-text h2 {
+    text-transform: capitalize;
+    font-weight: normal;
+    margin-top: 0px;
+    font-size: 14px;
+}
+
+.img-work {
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+/* Caminho de navegação - Breadcrumbs */
+
+.breadcrumbs {
+    font-size: 14px;
+    list-style: none;
+    padding-left: 0;
+    color: grey;
+}
+
+.breadcrumbs li {
+    display: inline-block;
+}
+
+/* Voltar ao inicio - Back to start */
+
+.back-to-start {
+    font-size: 14px;
+}
+
+/* Animações - Animations */
+
+@keyframes profile-image-animation {
+    0% {opacity: 0; transform: translate(0px,20px);}
+    100% {opacity: 1; transform: translate(0px, 0px);}
+}
+
+
+@keyframes profile-title-animation {
+    0% {opacity: 0; transform: translate(0px,-20px);}
+    100% {opacity: 1; transform: translate(0px, 0px);}
+}
+
+
+@keyframes navigation-animation {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes main-animation {
+    0% {opacity: 0; transform: translate(-20px,0px);}
+    100% {opacity: 1; transform: translate(0px,0px);}
+}
+
+/* Responsividade - Responsive */
+
+@media (max-width: 1000px) {
+    .navigation li {
+        display: none;
+    }
+
+    .navigation li.navigation-mobile {
+        display: inline-block;
+    }
+
+    .content div {
+        display: block;
+        height: auto;
+    }
+
+    .profile-image {
+        width: 100%;
+    }
+
+    .profile-image img {
+        margin-top: 5px;
+        max-width: 60%;
+    }
+
+    .profile-title {
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .profile-title h1 {
+        font-size: 36px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .profile-title h2 {
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .main {
+        padding: 10px 5% 40px 5%;
+    }
+
+    .main p {
+        text-align: left;
+        line-height: 30px;
+    }
+
+    .breadcrumbs li {
+        font-size: 12px;
+    }
+
+    .cv-img {
+        float: none;
+        max-width: 80%;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+
+    .portfolio-img {
+        max-width: 100%;
+        background-size: auto 100%;
+    }
+
+    .black-box {
+        opacity: 0.8;
+    }
+
+    .menu-mobile-js {
+        height: auto;
+    }
+    
+    .menu-mobile-js ul {
+        height: auto;
+        text-align: center;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .menu-mobile-js li {
+        display: block;
+        border-bottom: solid grey 1px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .navigation ul {
+        text-align: center;
+        padding: 0;
+    }
+}
