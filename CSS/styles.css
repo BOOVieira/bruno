@@ -12,7 +12,7 @@ a {
 }
 
 a:hover {
-    color: #f27609;
+    color: #00aa00ff;
 }
 
 /*Barra de navegação - Navigation Bar*/
@@ -54,7 +54,7 @@ a:hover {
 }
 
 .last-name {
-    color: #f27609;
+    color: #00aa00ff;
     display: block;
 }
 
@@ -124,7 +124,7 @@ a:hover {
 }
 
 .main h3 {
-    color: #f27609;
+    color: #00aa00ff;
     font-size: 12px;
     text-transform: uppercase;
 }
@@ -175,7 +175,7 @@ a:hover {
 
 .black-box-text h1 {
     font-size: 16px;
-    color: #f27609;
+    color: #00aa00ff;
     text-transform: uppercase;
     margin-top: 0px;
 }
